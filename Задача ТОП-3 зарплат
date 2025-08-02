@@ -1,0 +1,26 @@
+Задача про ТОП-3 зарплат в департаментах.
+Условие задачи: Руководители компании заинтересованы в том, чтобы узнать, кто зарабатывает больше всего денег в каждом из отделов компании. Высокооплачиваемый сотрудник в отделе - это сотрудник, заработная плата которого входит в тройку лучших в своем отделе.
+Напишите решение, позволяющее найти сотрудников с высокими доходами в каждом из отделов.
+Вид таблиц: 
+Table: Employee
++--------------+---------+
+| Column Name  | Type    |
++--------------+---------+
+| id           | int     |
+| name         | varchar |
+| salary       | int     |
+| departmentId | int     |
++--------------+---------+
+id is the primary key (column with unique values) for this table.
+departmentId is a foreign key (reference column) of the ID from the Department table.
+Each row of this table indicates the ID, name, and salary of an employee. It also contains the ID of their department.
+
+Table: Department
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| id          | int     |
+| name        | varchar |
++-------------+---------+
+id is the primary key (column with unique values) for this table.
+Each row of this table indicates the ID of a department and its name.
